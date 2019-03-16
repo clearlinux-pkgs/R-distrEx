@@ -4,7 +4,7 @@
 #
 Name     : R-distrEx
 Version  : 2.7.0
-Release  : 3
+Release  : 4
 URL      : https://cran.r-project.org/src/contrib/distrEx_2.7.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/distrEx_2.7.0.tar.gz
 Summary  : Extensions of Package 'distr'
