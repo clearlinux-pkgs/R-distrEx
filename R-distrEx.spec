@@ -4,7 +4,7 @@
 #
 Name     : R-distrEx
 Version  : 2.7.0
-Release  : 7
+Release  : 8
 URL      : https://cran.r-project.org/src/contrib/distrEx_2.7.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/distrEx_2.7.0.tar.gz
 Summary  : Extensions of Package 'distr'
@@ -35,10 +35,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1550863029
+export SOURCE_DATE_EPOCH=1552905134
 
 %install
-export SOURCE_DATE_EPOCH=1550863029
+export SOURCE_DATE_EPOCH=1552905134
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -74,8 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library distrEx|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  distrEx || :
 
 
 %files
@@ -109,11 +108,11 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/distrEx/help/paths.rds
 /usr/lib64/R/library/distrEx/html/00Index.html
 /usr/lib64/R/library/distrEx/html/R.css
-/usr/lib64/R/library/distrEx/libs/symbols.rds
+/usr/lib64/R/library/distrEx/tests/Examples/distrEx-Ex_i386.Rout.save
+/usr/lib64/R/library/distrEx/tests/Examples/distrEx-Ex_x64.Rout.save
 /usr/lib64/R/library/distrEx/tests/Tests.r
 
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/distrEx/libs/distrEx.so
 /usr/lib64/R/library/distrEx/libs/distrEx.so.avx2
-/usr/lib64/R/library/distrEx/libs/distrEx.so.avx512
