@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : R-distrEx
-Version  : 2.9.3
-Release  : 44
-URL      : https://cran.r-project.org/src/contrib/distrEx_2.9.3.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/distrEx_2.9.3.tar.gz
+Version  : 2.9.5
+Release  : 45
+URL      : https://cran.r-project.org/src/contrib/distrEx_2.9.5.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/distrEx_2.9.5.tar.gz
 Summary  : Extensions of Package 'distr'
 Group    : Development/Tools
 License  : LGPL-3.0
@@ -48,10 +48,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1724368033
+export SOURCE_DATE_EPOCH=1725292250
 
 %install
-export SOURCE_DATE_EPOCH=1724368033
+export SOURCE_DATE_EPOCH=1725292250
 rm -rf %{buildroot}
 LANG=C.UTF-8
 CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -O3 -flto -fno-semantic-interposition "
