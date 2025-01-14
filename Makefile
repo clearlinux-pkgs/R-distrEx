@@ -1,5 +1,5 @@
 PKG_NAME := R-distrEx
-URL = https://cran.r-project.org/src/contrib/distrEx_2.9.5.tar.gz
+URL = https://ftp.osuosl.org/pub/cran/src/contrib/distrEx_2.9.6.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
